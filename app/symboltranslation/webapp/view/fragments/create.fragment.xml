@@ -3,16 +3,16 @@
     xmlns:f="sap.ui.layout.form"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core">
-    <!-- HACK THE FUTURE Challenge: several properties are missing to make this a succesful save-->
-    <Dialog id="_IDGenDialog" title="Add new symbol" draggable="true">
+    <!-- HACK THE FUTURE Challenge: several properties are missing to make this a successful save-->
+    <Dialog id="_IDGenDialog" title="Add new symbol" draggable="true" resizable="true">
         <content>
             <VBox class="sapUiSmallMargin" id="formContainer">
                 <f:SimpleForm id="SimpleFormChangeColumn_twoGroups234" editable="true" layout="ColumnLayout" columnsM="2" columnsL="2" columnsXL="2">
                     <f:content>
                         <Label id="_IDGenLabel2" text="Icon" />
-                        <Input id="_IDGenInput1" required="true" value="{create>/symbol}" />
-                        <Label id="_IDGenLabel3" text="Where abouts" />
-                        <Input id="_IDGenInput2" required="true" value="{create>/whereFound}" />
+                        <Input id="_IDGenInput1" required="true" value="{create>/symbol}" placeholder="Enter icon name" />
+                        <Label id="_IDGenLabel3" text="Whereabouts" />
+                        <Input id="_IDGenInput2" required="true" value="{create>/whereFound}" placeholder="Enter location" />
                     </f:content>
                 </f:SimpleForm>
             </VBox>
@@ -21,7 +21,8 @@
             <Toolbar id="_IDGenToolbar">
                 <content>
                     <ToolbarSpacer id="_IDGenToolbarSpacer4" />
-                    <Button id="_IDGenButton4" text="Reject" type="Reject" press="closeDialog" ariaHasPopup="Dialog" />
+                    <Button id="_IDGenButtonSave" text="Save" type="Accept" press="onSavePress" ariaHasPopup="Dialog" />
+                    <Button id="_IDGenButtonReject" text="Reject" type="Reject" press="closeDialog" ariaHasPopup="Dialog" />
                 </content>
             </Toolbar>
         </footer>
