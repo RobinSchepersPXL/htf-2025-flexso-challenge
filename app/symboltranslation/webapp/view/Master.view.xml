@@ -1,0 +1,79 @@
+<mvc:View controllerName="flexso.cap.htf.symboltranslation.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:layout="sap.ui.layout" height="100%">
+    <f:DynamicPage id="dynamicPageId" headerExpanded="{/headerExpanded}" toggleHeaderOnTitleClick="{/titleClickable}">
+        <!-- DynamicPage Title -->
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <Title text="{i18n>appTitle}" />
+                </f:heading>
+                <f:breadcrumbs />
+                <f:expandedContent>
+                    <Label text="{i18n>appDescription}" />
+                </f:expandedContent>
+                <f:snappedContent>
+                    <Label text="{i18n>appDescription}" />
+                </f:snappedContent>
+                <f:content>
+                    <OverflowToolbar />
+                </f:content>
+            </f:DynamicPageTitle>
+        </f:title>
+        <!-- DynamicPage Header -->
+        <f:header>
+            <f:DynamicPageHeader pinnable="true" />
+        </f:header>
+        <f:content>
+            <Table id="idProductsTable" sticky="HeaderToolbar,ColumnHeaders" inset="false" items="{
+							path: '/Symbols',
+							sorter: {
+								path: 'symbol'
+							}
+						}" class="sapFDynamicPageAlignContent" width="auto" mode="MultiSelect">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Symbols" level="H2" />
+                        <ToolbarSpacer />
+                        <Button icon="sap-icon://add" type="Transparent" press="addIcon" />
+                        <Button icon="sap-icon://translate" type="Transparent" press="translate" />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <Text text="Value" />
+                    </Column>
+                    <Column>
+                        <Text text="Where found" />
+                    </Column>
+                    <Column>
+                        <Text text="Language" />
+                    </Column>
+                    <Column>
+                        <Text text="Translation" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{symbol}" />
+                            <Text text="{whereFound}" />
+                            <Text text="{language}" />
+                            <Text text="{translation}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </f:content>
+        <!-- DynamicPage Footer -->
+        <f:footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button type="Accept" text="Accept" />
+                <Button type="Reject" text="Reject" />
+            </OverflowToolbar>
+        </f:footer>
+    </f:DynamicPage>
+</mvc:View>

@@ -1,0 +1,139 @@
+{
+  "services": {
+    "LaunchPage": {
+      "adapter": {
+        "config": {
+          "catalogs": [],
+          "groups": [
+            {
+              "id": "Admin",
+              "title": "Admin",
+              "isPreset": true,
+              "isVisible": true,
+              "isGroupLocked": false,
+              "tiles": [
+                {
+                  "id": "symboltranslation",
+                  "title": "Symbol Translation",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "symboltranslation",
+                    "title": "Symbol Translation",
+                    "icon": "sap-icon://translate",
+                    "info": "",
+                    "targetURL": "#htf-symbol"
+                  }
+                },
+                {
+                  "id": "baserepair",
+                  "title": "Base Repair",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "baserepair",
+                    "title": "Base Repair",
+                    "icon": "sap-icon://wrench",
+                    "info": "",
+                    "targetURL": "#htf-baserepair"
+                  }
+                },
+                {
+                  "id": "securityoverview",
+                  "title": "Security Overview",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "securityoverview",
+                    "title": "Security Overview",
+                    "icon": "sap-icon://video",
+                    "info": "",
+                    "targetURL": "#htf-securityoverview"
+                  }
+                },
+                {
+                  "id": "sonaroverview",
+                  "title": "Sonar Overview",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "chipId": "sonaroverview",
+                    "title": "Sonar Overview",
+                    "icon": "sap-icon://radar-chart",
+                    "info": "",
+                    "targetURL": "#htf-showSonarFindings"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "NavTargetResolution": {
+      "config": {
+        "enableClientSideTargetResolution": true
+      }
+    },
+    "ClientSideTargetResolution": {
+      "adapter": {
+        "config": {
+          "inbounds": {
+            "symbol-manage": {
+              "semanticObject": "htf",
+              "action": "symbol",
+              "title": "Symbol Translation",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              },
+              "resolutionResult": {
+                "applicationType": "SAPUI5",
+                "additionalInformation": "SAPUI5.Component=flexso.cap.htf.symboltranslation",
+                "url": "./symboltranslation/dist"
+              }
+            },
+            "htf-baserepair": {
+              "semanticObject": "htf",
+              "action": "baserepair",
+              "title": "Base Repair",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              },
+              "resolutionResult": {
+                "applicationType": "SAPUI5",
+                "additionalInformation": "SAPUI5.Component=flexso.cap.htf.baserepair",
+                "url": "./baserepair/dist"
+              }
+            },
+            "htf-securityoverview": {
+              "semanticObject": "htf",
+              "action": "securityoverview",
+              "title": "Security Overview",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              },
+              "resolutionResult": {
+                "applicationType": "SAPUI5",
+                "additionalInformation": "SAPUI5.Component=flexso.cap.htf.securityoverview",
+                "url": "./securityoverview/dist"
+              }
+            },
+            "htf-showSonarFindings": {
+              "semanticObject": "htf",
+              "action": "showSonarFindings",
+              "title": "Sonar Overview",
+              "signature": {
+                "parameters": {},
+                "additionalParameters": "allowed"
+              },
+              "resolutionResult": {
+                "applicationType": "SAPUI5",
+                "additionalInformation": "SAPUI5.Component=flexso.cap.hrf.sonaroverview",
+                "url": "./sonaroverview/dist"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

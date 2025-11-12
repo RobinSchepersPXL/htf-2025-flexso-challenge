@@ -1,0 +1,22 @@
+ID;name;description;closestCamera_ID
+cfd8e0f4-7dca-436a-ad0e-59ebb60c3b33;Mariana Trench;A deep-sea trench not much alike the one on Earth.;144bf246-423f-4904-b6b3-35ca8bd1e011
+d2f4e8b1-3c5a-4f7a-9f3e-2b6e4c8f9a12;Sunlit Zone;A sandy area with abundant plant life and sunlight.;d24f9cc7-345f-48d7-ad05-83c4736faf53
+a7e5b6c3-1f4a-4d2e-9f8b-2c3d4e5f6a7b;Seaweed Valley;A lush valley filled with towering seaweed forests.;eb80bebc-9591-4695-810b-1a8af6141483
+b1e2c3d4-5f6a-7b8c-9d0e-1f2a3b4c5d6e;Echoing Grotto;A cavern where sounds carry further than expected, making navigation tricky.;38547b25-036d-4baa-9465-1960be5a2d45
+e7f8a9b0-c1d2-e3f4-a5b6-c7d8e9f0a1b2;Crystal Gardens;Fields of bioluminescent crystals, softly lighting the seabed.;bb5bf20c-4795-4a07-af5a-474c700e4b03
+f0e1d2c3-b4a5-6c7d-8e9f-0a1b2c3d4e5f;Silent Observatory;Ruins of an ancient outpost, its secrets lost to time;e6359b4b-0a6c-477c-b0c5-886fb4f2d5d0
+a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d;Forgotten Engine;Remnants of old machinery, humming faintly with residual power.;9c2ba723-9b74-4f37-b44a-8fc792c41dc6
+c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f;Abyssal Mirror;A calm pool reflecting the submersible’s lights perfectly.;d24f9cc7-345f-48d7-ad05-83c4736faf53
+d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a;Luminous Rift;A narrow crack in the seabed, glowing with faint blue light.;eb80bebc-9591-4695-810b-1a8af6141483
+e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b;Siren’s Labyrinth;A maze of coral where currents create odd, melodic sounds.;144bf246-423f-4904-b6b3-35ca8bd1e011
+f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c;Pulse Chamber;A dome where the water vibrates with a steady, rhythmic beat.;38547b25-036d-4baa-9465-1960be5a2d45
+a8b9c0d1-e2f3-4a5b-6c7d-8e9f0a1b2c3d;Phantom Dock;A half-sunken platform, covered in barnacles and seaweed.;bb5bf20c-4795-4a07-af5a-474c700e4b03
+b9c0d1e2-f3a4-5b6c-7d8e-9f0a1b2c3d4e;Spiral Forest;Twisting kelp and swirling currents make this area hard to map.;e6359b4b-0a6c-477c-b0c5-886fb4f2d5d0
+c0d1e2f3-a4b5-6c7d-8e9f-0a1b2c3d4e5f;Lantern Fields;Meadows of glowing plankton, lighting up as you pass.;9c2ba723-9b74-4f37-b44a-8fc792c41dc6
+d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a;Gravity Well;A swirling vortex where objects drift unpredictably.;bb5bf20c-4795-4a07-af5a-474c700e4b03
+e2f3a4b5-c6d7-8e9f-0a1b-2c3d4e5f6a7b;Oracle’s Perch;A rocky spire with excellent sonar reception.;d24f9cc7-345f-48d7-ad05-83c4736faf53
+f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c;Shattered Dome;Fragments of a collapsed dome, now home to small sea creatures.;e6359b4b-0a6c-477c-b0c5-886fb4f2d5d0
+a4b5c6d7-e8f9-0a1b-2c3d-4e5f6a7b8c9d;Whispering Shelf;A ledge where the water carries distant, muffled sounds.;38547b25-036d-4baa-9465-1960be5a2d45
+b5c6d7e8-f9a0-1b2c-3d4e-5f6a7b8c9d0e;Twilight Crossing;A borderland where light fades quickly, confusing the senses.;9c2ba723-9b74-4f37-b44a-8fc792c41dc6
+c6d7e8f9-a0b1-2c3d-4e5f-6a7b8c9d0e1f;Leviathan’s Gate;Massive stone arches, rumoured to be a migration route for large sea life.;144bf246-423f-4904-b6b3-35ca8bd1e011
+d7e8f9a0-b1c2-3d4e-5f6a-7b8c9d0e1f2a;Homebase;Our research station, badly damaged after the attack from a mysterious creature;144bf246-423f-4904-b6b3-35ca8bd1e011

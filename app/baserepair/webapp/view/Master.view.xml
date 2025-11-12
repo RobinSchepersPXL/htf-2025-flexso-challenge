@@ -1,0 +1,54 @@
+<mvc:View controllerName="flexso.cap.htf.baserepair.controller.Master"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.suite.ui.commons"
+    xmlns="sap.m">
+    <Page id="idPage" title="Product: Security Camera" class="sapUiResponsivePadding--header">
+        <!-- this CSS class add a standard spacing to all the page content -->
+
+        <content>
+            <ObjectHeader id="_IDGenObjectHeader" title="{name}" backgroundDesign="Solid">
+                <attributes>
+                    <ObjectAttribute id="_IDGenObjectAttribute1" title="Weight" text="{weight}" />
+                    <ObjectAttribute id="_IDGenObjectAttribute2" title="Dimensions" text="{dimensions}" />
+                    <ObjectAttribute id="_IDGenObjectAttribute" title="Color" text="{color}" />
+                </attributes>
+                <statuses>
+                    <ObjectStatus id="_IDGenObjectStatus" title="Amount in Stock" text="{amountInStock}" state="Success" />
+                </statuses>
+            </ObjectHeader>
+            <IconTabBar id="_IDGenIconTabBar" expanded="true" class="sapUiSmallMarginBottom sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter id="_IDGenIconTabFilter" key="Parts" text="Parts">
+                        <!-- HACK THE FUTURE Challenge: Here we should have an overview of materials -->
+                        <!-- Can you display them as a table?-->
+                        <!-- It should be possible to perform the actions 'order' and 'refresh' on them-->
+
+                    </IconTabFilter>
+                    <IconTabFilter id="_IDGenIconTabFilter1" key="Production" text="Production">
+                        <Button id="_IDGenButton" text="Produce {name}" press="produce"></Button>
+                        <Button id="_IDGenButton5" icon="sap-icon://synchronize" type="Transparent" press="refeshProducton"></Button>
+                        <m:ProcessFlow id="processflow" scrollable="true" lanes="{
+							path: '/Production',
+							parameters: {
+								$expand: {
+                                    state: {
+                                    $select: ['state','value'] }
+                                }
+							}
+						}">
+                            <m:lanes>
+                                <m:ProcessFlowLaneHeader id="_IDGenProcessFlowLaneHeader" laneId="{ID}" iconSrc="{icon}" text="{label}" position="{position}" state="{path: 'state', formatter:'.formatter.stateFormatter', targetType:'any'}" />
+                            </m:lanes>
+                        </m:ProcessFlow>
+                    </IconTabFilter>
+                    <IconTabFilter id="_IDGenIconTabFilter2" key="Installations" text="Installations">
+                        <!-- HACK THE FUTURE Challenge: Here we should have an overview of all installations of this product -->
+                        <!-- It should be possible to execute the function replaceCamera on an entry-->
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>

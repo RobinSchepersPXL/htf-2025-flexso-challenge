@@ -1,0 +1,69 @@
+<mvc:View controllerName="flexso.cap.htf.securityoverview.controller.Master"
+    xmlns="sap.uxap"
+    xmlns:m="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core">
+    <!-- HACK THE FUTURE Challenge: here we have code to represent the state when no location is selected--> 
+    <!-- You will have to write XML controls for what happens when a location is selected -->
+    <ObjectPageLayout
+        id="id.ObjectPageLayout"
+        busy="{appView>/busy}"
+        busyIndicatorDelay="100"
+        preserveHeaderStateOnScroll="true"
+        toggleHeaderOnTitleClick="false">
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <content>
+                    <m:Title text="This is your platform to monitor around your base" />
+                </content>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+
+        <headerContent>
+            <ObjectPageDynamicHeaderTitle>
+                <content>
+                    <m:HBox>
+                        <m:Input
+                            class="sapUiTinyMargin"
+                            placeholder="Enter the area you want to observe"
+                            change="onSelectLocation"
+                        />
+                        <m:VBox binding="{path:'/checkCameraAvailability()'}">
+                            <core:Icon src="sap-icon://video"
+                                visible="{value}"
+                                color="Positive"
+                                tooltip="All cameras available" />
+                            <core:Icon src="sap-icon://error"
+                                visible="{= !${value} }"
+                                color="Negative"
+                                tooltip="There are cameras down" />
+                        </m:VBox>
+                    </m:HBox>
+
+                </content>
+            </ObjectPageDynamicHeaderTitle>
+        </headerContent>
+
+        <sections>
+            <ObjectPageSection showTitle="false" visible="{= !${appView>/hasSelectedLocation} }">
+                <subSections>
+                    <ObjectPageSubSection class="sapUxAPObjectPageSubSectionFitContainer">
+                        <m:IllustratedMessage
+                            title="No camera images"
+                            description="Please assign a location to observe."
+                        />
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection showTitle="false" visible="{appView>/hasSelectedLocation}">
+                <subSections>
+                    <ObjectPageSubSection class="sapUxAPObjectPageSubSectionFitContainer">
+
+                    </ObjectPageSubSection>
+                </subSections>
+
+            </ObjectPageSection>
+        </sections>
+
+    </ObjectPageLayout>
+</mvc:View>

@@ -1,0 +1,12 @@
+ID;name;weight;dimensions;color;amountInStock;product;amountNeededForProduction;amountOrderd
+a50644eb-9790-4982-80a1-c47ceeaaf2cd;Lens;0,16;20 x 18 x 20;pink;3;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+b50644eb-9790-4982-80a1-c47ceeaaf2cd;Waterproof Cover MINI;0,23;20 x 18 x 20;purple;5;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+d50644eb-9790-4982-80a1-c47ceeaaf2cd;Sensor;0,3;20 x 18 x 20;orange;2;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+f50644eb-9790-4982-80a1-c47ceeaaf2cd;Heat Sink Block;1289 g;138 x 72 x 49 mm;Titanium;390;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+1bbd1e53-960b-4028-9c49-506c79e5119c;IBIS Module;479 g;123 x 79 x 55 mm;Black;123;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+8e785c80-51f5-4f01-acb7-32a9ce64b41b;VRAM Module;512 g;142 x 90 x 75 mm;Graphite;135;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+028111f9-5972-4864-8488-5cc3efb6adef;Shutter Mechanism;888 g;125 x 102 x 81 mm;Titanium;224;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+fb5bb283-6053-47da-b8ce-c63c1e24f34d;Copper Shielding;293 g;137 x 95 x 54 mm;Anthracite;112;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+dbea17dd-ea1b-4376-87c5-8a8adfd9d547;HDMI Port;388 g;102 x 81 x 44 mm;Red;121;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+44d82005-edd9-47ca-abe4-bb0e7233aba9;Fluorite Element;747 g;130 x 86 x 52 mm;Silver;49;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
+46a9ee0e-f065-4751-b0fe-166d5df49bd7;OLED EVF Panel;451 g;103 x 85 x 61 mm;Silver;127;0a85863f-100d-4e0b-91a1-89897f4490d6;2;0
